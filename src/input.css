@@ -75,6 +75,7 @@ body {
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   overflow: hidden;
   animation: morph 3s linear infinite;
+  z-index: 1;
 }
 
 @keyframes morph {
