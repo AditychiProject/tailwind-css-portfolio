@@ -15,7 +15,7 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <!-- Fonts -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -25,10 +25,11 @@
     <header class="flex items-center w-full absolute top-0 left-0 z-10 bg-transparent">
       <div class="container">
         <div class="flex items-center justify-between relative">
+          <!-- Header Kiri -->
           <div class="px-4">
-            <!-- Logo -->
-            <a href="#" class="block text-lg lg:text-2xl text-primary font-bold py-6">Aditychi</a>
+            <a href="#hero" class="block text-lg lg:text-2xl text-primary font-bold py-6">Aditychi</a>
           </div>
+          <!-- Header Kanan -->
           <div class="flex items-center px-4">
             <!-- Hamburger Menu -->
             <button id="hamburger" type="button" class="block lg:hidden absolute right-4">
@@ -37,24 +38,21 @@
               <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
             <!-- Links -->
-            <nav
-              id="nav-menu"
-              class="hidden lg:block max-w-[250px] lg:max-w-full w-full absolute lg:static top-full right-4 z-[9999999] bg-white lg:bg-transparent dark:bg-dark lg:dark:bg-transparent shadow-lg lg:shadow-none dark:shadow-slate-500 py-5"
-            >
+            <nav id="nav-menu" class="hidden lg:block max-w-[250px] lg:max-w-full w-full absolute lg:static top-full right-4 z-[9999999] bg-white lg:bg-transparent dark:bg-dark dark:border dark:border-white lg:dark:bg-transparent py-5">
               <ul class="block lg:flex">
-                <!-- Home -->
+                <!-- Profil -->
                 <li class="group">
                   <a href="#profil" class="navbar-links">Profil</a>
                 </li>
-                <!-- Portfolio -->
+                <!-- Karya -->
                 <li class="group">
                   <a href="#karya" class="navbar-links">Karya</a>
                 </li>
-                <!-- Blog -->
+                <!-- Penghargaan -->
                 <li class="group">
                   <a href="#penghargaan" class="navbar-links">Penghargaan</a>
                 </li>
-                <!-- Contact -->
+                <!-- Hubungi -->
                 <li class="group">
                   <a href="#hubungi" class="navbar-links">Hubungi</a>
                 </li>
@@ -78,10 +76,10 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section id="home" class="bg-light dark:bg-dark pt-20 min-h-screen">
+    <section id="hero" class="min-h-screen bg-light dark:bg-dark pt-20">
       <div class="container">
         <div class="flex flex-wrap">
-          <!-- Left Column -->
+          <!-- Kolom Kiri -->
           <div class="self-center w-full lg:w-1/2 px-4 pb-8 lg:pb-0">
             <p class="text-paragraph">Halo semua, saya</p>
             <h1 class="text-4xl lg:text-5xl text-dark dark:text-white font-bold mt-4 mb-2">Aditychi</h1>
@@ -89,25 +87,25 @@
             <p class="text-paragraph leading-loose mt-4 mb-7">
               Saya adalah seorang freelance di bidang desain grafis yang berdedikasi untuk membantu Anda menyampaikan pesan dan visi bisnis Anda kepada khalayak umum melalui karya-karya visual yang memukau.
             </p>
-            <a href="#hubungi" class="inline-block text-base text-white font-medium bg-primary hover:bg-primaryHover px-8 py-4 hover:translate-x-1 hover:translate-y-1 transition duration-300 ease-in-out">Hubungi saya</a>
+            <a href="#hubungi" class="inline-block text-base text-white font-medium bg-primary hover:bg-primaryhover px-8 py-4 hover:translate-x-1 hover:translate-y-1 transition duration-300 ease-in-out">Hubungi Saya</a>
           </div>
-          <!-- Right Column -->
-          <div class="self-end w-full lg:w-1/2 px-4 py-8 flex justify-center order-first lg:order-last">
-            <div class="relative z-10 lg:right-0 mt-0 lg:mt-10 w-full lg:w-2/3 circle">
-              <img src="dist/img/hero_jpg.jpg" alt="Hero Image" class="max-w-full relative z-10 mx-auto" />
+          <!-- Kolom Kanan -->
+          <div class="self-end flex justify-center order-first lg:order-last w-full lg:w-1/2 px-4 py-8">
+            <div class="circle w-full lg:w-2/3 relative lg:right-0 mt-0 lg:mt-10">
+              <img src="dist/img/hero_jpg.jpg" alt="Foto Aditychi" class="max-w-full relative z-10 mx-auto" />
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Profil Section -->
-    <section id="profil" class="bg-white dark:bg-dark py-36">
+    <section id="profil" class="bg-white dark:bg-slate-800 py-36">
       <div class="container">
         <div class="flex flex-wrap">
-          <!-- Left Column -->
+          <!-- Kolom Kiri -->
           <div class="w-full lg:w-1/2 mb-10 px-4">
             <h2 class="text-lg text-primary font-bold">Profil Saya</h2>
-            <h3 class="max-w-lg text-3xl lg:text-3xl text-dark dark:text-white font-semibold leading-relaxed lg:mt-10 mb-6">Cerita Dikit Ya, Hehehe</h3>
+            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Kenalan Yuk!</h3>
             <p class="about-left-col-paragraph">
               Assalamu'alaykum. Perkenalkan, saya Aditychi. Seorang freelancer di bidang desain grafis. Saya berasal dari Pontianak, Kalimantan Barat. Saat ini, saya telah menyelesaikan perkuliahan jenjang S1 jurusan teknik informatika di
               STMIK Pontianak, Kalimantan Barat.
@@ -119,18 +117,18 @@
               merasa terdorong untuk terus mengembangkan keterampilan dan bakat saya di bidang ini.
             </p>
           </div>
-          <!-- Right Column -->
+          <!-- Kolom Kanan -->
           <div class="w-full lg:w-1/2 px-4">
             <!-- Pendidikan Terakhir -->
             <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Pendidikan Terakhir</h3>
             <ul>
-              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">S1 : Teknik Informatika STMIK Pontianak (2019-2023)</li>
+              <li class="text-base text-paragraph leading-loose list-disc list-outside ml-4 mb-6 lg:mb-0">S1 : Teknik Informatika STMIK Pontianak (2019-2023).</li>
             </ul>
             <!-- Pengalaman -->
             <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Pengalaman</h3>
             <ul>
-              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">Telah berkolaborasi dengan teman-teman lain dalam pembuatan poster.</li>
-              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">Berhasil mendapatkan juara 1 dalam lomba desain poster pada seminar nasional CORISINDO 2023.</li>
+              <li class="text-base text-paragraph leading-loose list-disc list-outside ml-4 mb-1">Telah berkolaborasi dengan teman-teman lain dalam pembuatan poster.</li>
+              <li class="text-base text-paragraph leading-loose list-disc list-outside ml-4 mb-6 lg:mb-0">Berhasil mendapatkan juara 1 dalam lomba desain poster pada seminar nasional CORISINDO 2023.</li>
             </ul>
             <!-- Sosial Media -->
             <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Mari Berteman</h3>
@@ -140,7 +138,7 @@
             <!-- Icons Social Media -->
             <div class="flex items-center">
               <!-- Youtube -->
-              <a href="#" target="_blank" class="icons-sosmed">
+              <a href="https://www.tiktok.com/@its.aditchy" target="_blank" class="icons-sosmed">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
@@ -149,7 +147,7 @@
                 </svg>
               </a>
               <!-- Instagram -->
-              <a href="#" target="_blank" class="icons-sosmed">
+              <a href="https://www.instagram.com/its.aditychi/" target="_blank" class="icons-sosmed">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -158,7 +156,7 @@
                 </svg>
               </a>
               <!-- LinkedIn -->
-              <a href="#" target="_blank" class="icons-sosmed">
+              <a href="https://www.linkedin.com/in/aditya-athawidhahmeisa-2309aa27a/" target="_blank" class="icons-sosmed">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -172,7 +170,7 @@
       </div>
     </section>
     <!-- Karya Section -->
-    <section id="karya" class="bg-light dark:bg-slate-800 py-36">
+    <section id="karya" class="bg-light dark:bg-dark py-36">
       <div class="container">
         <!-- Header -->
         <div class="w-full px-4">
@@ -184,32 +182,33 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center w-full xl:w-10/12 xl:mx-auto">
-          <!-- Portfolio 1 -->
+        <!-- Karya -->
+        <div class="flex flex-wrap justify-center w-full">
+          <!-- Karya 1 -->
           <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
             <div class="overflow-hidden">
-              <img src="dist/img/portfolio/1.png" onclick="showModal('dist/img/portfolio/1.png')" alt="Landing Page" class="w-full cursor-pointer" />
+              <img src="dist/img/portfolio/1.png" onclick="showModal('dist/img/portfolio/1.png')" alt="Poster Collab - Nisa Bakery" class="w-full cursor-pointer" />
               <h3 class="portfolio-title my-2">Poster Collab - Nisa Bakery</h3>
             </div>
           </div>
-          <!-- Portfolio 2 -->
+          <!-- Karya 2 -->
           <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
             <div class="overflow-hidden">
-              <img src="dist/img/portfolio/2.png" onclick="showModal('dist/img/portfolio/2.png')" alt="Portfolio" class="w-full cursor-pointer" />
+              <img src="dist/img/portfolio/2.png" onclick="showModal('dist/img/portfolio/2.png')" alt="Poster Dakwah" class="w-full cursor-pointer" />
               <h3 class="portfolio-title my-2">Poster Dakwah</h3>
             </div>
           </div>
-          <!-- Portfolio 3 -->
+          <!-- Karya 3 -->
           <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
             <div class="overflow-hidden">
-              <img src="dist/img/portfolio/3.png" onclick="showModal('dist/img/portfolio/3.png')" alt="E-commerce" class="w-full cursor-pointer" />
+              <img src="dist/img/portfolio/3.png" onclick="showModal('dist/img/portfolio/3.png')" alt="Poster Collab - Irfan Syaifullah" class="w-full cursor-pointer" />
               <h3 class="portfolio-title my-2">Poster Collab - Irfan Syaifullah</h3>
             </div>
           </div>
-          <!-- Portfolio 4 -->
+          <!-- Karya 4 -->
           <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
             <div class="overflow-hidden">
-              <img src="dist/img/portfolio/4.png" onclick="showModal('dist/img/portfolio/4.png')" alt="Blog" class="w-full cursor-pointer" />
+              <img src="dist/img/portfolio/4.png" onclick="showModal('dist/img/portfolio/4.png')" alt="Poster Collab - Bina Sarana" class="w-full cursor-pointer" />
               <h3 class="portfolio-title my-2">Poster Collab - Bina Sarana</h3>
             </div>
           </div>
@@ -217,7 +216,7 @@
       </div>
     </section>
     <!-- Penghargaan Section -->
-    <section id="penghargaan" class="bg-white dark:bg-dark py-36">
+    <section id="penghargaan" class="bg-white dark:bg-slate-800 py-36">
       <div class="container">
         <!-- Header -->
         <div class="w-full px-4">
@@ -227,32 +226,54 @@
             <p class="text-paragraph leading-loose">Di bawah ini, Anda dapat melihat penghargaan yang telah saya peroleh dari lomba atau event yang saya ikuti.</p>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center w-full xl:w-10/12 xl:mx-auto">
-          <!-- Portfolio 1 -->
+        <!-- Penghargaan -->
+        <div class="flex flex-wrap items-center justify-center w-full">
+          <!-- Penghargaan 1 -->
           <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
             <div class="overflow-hidden">
-              <img src="dist/img/portfolio/penghargaan.jpg" onclick="showModal('dist/img/portfolio/penghargaan.jpg')" alt="Landing Page" class="w-full cursor-pointer" />
-              <h3 class="portfolio-title my-2">Juara 1 Lomba Desain Poster Pada CORISINDO 2023.</h3>
+              <img src="dist/img/portfolio/penghargaan.jpg" onclick="showModal('dist/img/portfolio/penghargaan.jpg')" alt="Juara 1 Lomba Desain Poster Pada CORISINDO 2023" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Juara 1 Lomba Desain Poster CORISINDO 2023</h3>
+            </div>
+          </div>
+          <!-- Penghargaan 2 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/sertifikat.jpg" onclick="showModal('dist/img/portfolio/sertifikat.jpg')" alt="Juara 1 Lomba Desain Poster Pada CORISINDO 2023" class="w-full cursor-pointer border border-slate-400" />
+              <h3 class="portfolio-title my-2">Sertifikat Juara 1 Lomba Desain Poster CORISINDO 2023</h3>
+            </div>
+          </div>
+          <!-- Penghargaan 3 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/freecodecamp.png" onclick="showModal('dist/img/portfolio/freecodecamp.png')" alt="Juara 1 Lomba Desain Poster Pada CORISINDO 2023" class="w-full cursor-pointer border border-slate-400" />
+              <h3 class="portfolio-title my-2">Sertifikat FreeCodeCamp Web Design</h3>
+            </div>
+          </div>
+          <!-- Penghargaan 4 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/ux-research.jpg" onclick="showModal('dist/img/portfolio/ux-research.jpg')" alt="Juara 1 Lomba Desain Poster Pada CORISINDO 2023" class="w-full cursor-pointer border border-slate-400" />
+              <h3 class="portfolio-title my-2">Sertifikat Mini Bootcamp MySkill - UX Research</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Hubungi Section -->
-    <section id="hubungi" class="bg-light dark:bg-slate-800 py-36">
+    <section id="hubungi" class="bg-light dark:bg-dark py-36">
       <div class="container">
         <!-- Header -->
         <div class="w-full px-4">
           <div class="max-w-xl text-center mx-auto mb-16">
-            <h2 class="text-lg text-primary font-semibold mb-4">Kontak</h2>
+            <h2 class="text-lg text-primary font-bold mb-4">Kontak</h2>
             <h4 class="text-3xl lg:text-5xl text-dark dark:text-white font-bold mb-8">Hubungi Saya</h4>
             <p class="text-paragraph">Jika Anda memiliki pertanyaan, kritik, atau saran yang ingin Anda bagikan, silakan gunakan form di bawah ini.</p>
           </div>
         </div>
         <!-- Form -->
         <form>
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <!-- Name -->
+          <div class="w-full lg:w-2/3 mx-auto">
+            <!-- Nama -->
             <div class="w-full lg:w-8/12 mx-auto mb-6">
               <label for="name" class="label-field">Nama</label>
               <input type="text" id="name" class="input-field" placeholder="Masukkan nama Anda" />
@@ -262,57 +283,37 @@
               <label for="email" class="label-field">Email</label>
               <input type="text" id="email" class="input-field" placeholder="Masukkan email Anda" />
             </div>
-            <!-- Message -->
+            <!-- Pesan -->
             <div class="w-full lg:w-8/12 mx-auto mb-6">
               <label for="message" class="label-field">Pesan</label>
               <textarea id="message" class="input-field h-32 resize-none" placeholder="Masukkan pesan Anda"></textarea>
             </div>
-            <!-- Submit -->
+            <!-- Kirim -->
             <div class="w-full lg:w-8/12 mx-auto">
-              <button class="block w-full text-base text-white font-medium bg-primary hover:bg-primaryHover px-8 py-4 transition duration-300 ease-in-out">Kirim</button>
+              <button class="block w-full text-base text-white font-medium bg-primary hover:bg-primaryhover px-8 py-4 transition duration-300 ease-in-out">Kirim</button>
             </div>
           </div>
         </form>
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-light dark:bg-slate-800 py-5">
-      <p class="text-sm font-medium text-paragraph text-center">Copyright &copy; 2023 Aditychi.</p>
+    <footer class="bg-light dark:bg-dark py-5">
+      <p class="text-sm text-paragraph text-center font-medium">Copyright &copy; 2023 Aditychi.</p>
     </footer>
     <!-- Back to Top -->
-    <a href="#home" class="flex items-center justify-center w-14 h-14 fixed right-4 bottom-4 z-[9999] bg-primary hover:bg-primaryHover rounded-full p-4"
+    <a href="#hero" class="flex items-center justify-center w-14 h-14 fixed right-4 bottom-4 z-[9999] bg-primary hover:bg-primaryhover rounded-full p-4 transition duration-300 ease-in-out"
       ><span class="block text-white"
         ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" /></svg></span
     ></a>
-
-    <!-- The Modal -->
-    <div id="modal" class="hidden fixed top-0 left-0 z-[99999] w-screen h-screen bg-black/80 flex justify-center items-center">
-      <!-- The close button -->
-      <a class="fixed z-[99999999] top-10 lg:top-auto right-auto lg:right-1/4 text-white text-5xl font-medium" href="javascript:void(0)" onclick="closeModal()">&times;</a>
-
-      <!-- A big image will be displayed here -->
+    <!-- Modal Image -->
+    <div id="modal" class="hidden flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-[99999] bg-black/80">
+      <!-- Tombol Close -->
+      <a class="fixed top-10 lg:top-auto right-auto lg:right-28 z-[99999999] text-5xl text-white font-medium" href="javascript:void(0)" onclick="closeModal()">&times;</a>
+      <!-- Gambar Besar -->
       <img id="modal-img" class="max-w-full lg:max-w-[800px] lg:max-h-[600px] object-cover" />
     </div>
     <!-- Script -->
     <script src="dist/js/script.js"></script>
-    <script>
-      // Get the modal by id
-      var modal = document.getElementById("modal");
-
-      // Get the modal image tag
-      var modalImg = document.getElementById("modal-img");
-
-      // this function is called when a small image is clicked
-      function showModal(src) {
-        modal.classList.remove("hidden");
-        modalImg.src = src;
-      }
-
-      // this function is called when the close button is clicked
-      function closeModal() {
-        modal.classList.add("hidden");
-      }
-    </script>
   </body>
 </html>

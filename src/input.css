@@ -40,7 +40,7 @@ body {
 }
 
 .portfolio-title {
-  @apply lg:text-lg text-center text-dark dark:text-white font-semibold mt-5;
+  @apply text-center text-dark dark:text-white font-medium mt-5;
 }
 
 .portfolio-link {
