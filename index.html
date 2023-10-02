@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Atha</title>
+    <title>Portfolio - Aditychi</title>
     <!-- Style -->
     <link rel="stylesheet" href="dist/output.css" />
     <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
@@ -27,7 +27,7 @@
         <div class="flex items-center justify-between relative">
           <div class="px-4">
             <!-- Logo -->
-            <a href="#home" class="block text-lg lg:text-2xl text-primary font-bold py-6">Aditya Atha</a>
+            <a href="#home" class="block text-lg lg:text-2xl text-primary font-bold py-6">Aditychi</a>
           </div>
           <div class="flex items-center px-4">
             <!-- Hamburger Menu -->
@@ -39,40 +39,36 @@
             <!-- Links -->
             <nav
               id="nav-menu"
-              class="hidden lg:block max-w-[250px] lg:max-w-full w-full absolute lg:static top-full right-4 bg-white lg:bg-transparent dark:bg-dark lg:dark:bg-transparent rounded-lg lg:rounded-none shadow-lg lg:shadow-none dark:shadow-slate-500 py-5"
+              class="hidden lg:block max-w-[250px] lg:max-w-full w-full absolute lg:static top-full right-4 bg-white lg:bg-transparent dark:bg-dark lg:dark:bg-transparent shadow-lg lg:shadow-none dark:shadow-slate-500 py-5"
             >
               <ul class="block lg:flex">
                 <!-- Home -->
                 <li class="group">
-                  <a href="#home" class="navbar-links">Home</a>
-                </li>
-                <!-- About -->
-                <li class="group">
-                  <a href="#about" class="navbar-links">About</a>
+                  <a href="#home" class="navbar-links">Profil</a>
                 </li>
                 <!-- Portfolio -->
                 <li class="group">
-                  <a href="#portfolio" class="navbar-links">Portfolio</a>
+                  <a href="#portfolio" class="navbar-links">Karya</a>
                 </li>
                 <!-- Blog -->
                 <li class="group">
-                  <a href="#blog" class="navbar-links">Blog</a>
+                  <a href="#blog" class="navbar-links">Penghargaan</a>
                 </li>
                 <!-- Contact -->
                 <li class="group">
-                  <a href="#contact" class="navbar-links">Contact</a>
+                  <a href="#contact" class="navbar-links">Hubungi</a>
                 </li>
                 <!-- Dark Mode Toggle -->
                 <li class="flex items-center mt-3 lg:mt-0 pl-8">
                   <div class="flex">
-                    <span class="dark-mode-label mr-2">Light</span>
+                    <span class="dark-mode-label mr-2">Terang</span>
                     <input type="checkbox" id="dark-toggle" class="hidden" />
                     <label for="dark-toggle">
                       <div class="cursor-pointer flex items-center w-9 h-5 bg-slate-500 rounded-full p-1">
                         <div class="toggle-circle w-4 h-4 bg-white rounded-full transition duration-300 ease-in-out"></div>
                       </div>
                     </label>
-                    <span class="dark-mode-label ml-2">Dark</span>
+                    <span class="dark-mode-label ml-2">Gelap</span>
                   </div>
                 </li>
               </ul>
@@ -82,83 +78,64 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section id="home" class="dark:bg-dark pt-20">
+    <section id="home" class="bg-light dark:bg-dark pt-20 min-h-screen">
       <div class="container">
         <div class="flex flex-wrap">
           <!-- Left Column -->
-          <div class="self-center w-full lg:w-1/2 px-4">
-            <h1 class="text-base lg:text-xl text-primary font-semibold">Halo semua, saya <span class="block text-4xl lg:text-5xl text-dark dark:text-white font-bold mt-4 mb-2">Aditya Atha</span></h1>
-            <h2 class="text-lg lg:text-2xl text-secondary font-medium">Programmer Website</h2>
-            <p class="text-secondary font-medium leading-relaxed my-8">
-              Saya adalah seorang programmer website yang berdedikasi untuk menciptakan kode yang kuat dan solusi web yang inovatif. Dengan keahlian dalam HTML, CSS, dan framework modern, saya mengubah ide-ide menjadi kenyataan yang
-              fungsional dan menarik.
+          <div class="self-center w-full lg:w-1/2 px-4 pb-8 lg:pb-0">
+            <p class="text-paragraph">Halo semua, saya</p>
+            <h1 class="text-4xl lg:text-5xl text-dark dark:text-white font-bold mt-4 mb-2">Aditychi</h1>
+            <h2 class="text-lg lg:text-2xl text-paragraph font-medium">Freelancer</h2>
+            <p class="text-paragraph leading-loose mt-4 mb-7">
+              Saya adalah seorang freelance di bidang desain grafis yang berdedikasi untuk membantu Anda menyampaikan pesan dan visi bisnis Anda kepada khalayak umum melalui karya-karya visual yang memukau.
             </p>
-            <a href="#contact" class="inline-block text-base text-white font-semibold bg-primary hover:bg-primaryHover rounded-full px-8 py-3 hover:translate-x-1 hover:translate-y-1 transition duration-300 ease-in-out">Hubungi saya</a>
+            <a href="#contact" class="inline-block text-base text-white font-medium bg-primary hover:bg-primaryHover px-8 py-4 hover:translate-x-1 hover:translate-y-1 transition duration-300 ease-in-out">Hubungi saya</a>
           </div>
           <!-- Right Column -->
-          <div class="self-end w-full lg:w-1/2 px-4">
-            <div class="relative lg:right-0 mt-10">
-              <img src="dist/img/hero.png" alt="Hero Image" class="max-w-full relative z-10 mx-auto" />
-              <span class="absolute bottom-0 left-1/2 md:scale-125 -translate-x-1/2">
-                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#14b8a6"
-                    d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
-                    transform="translate(100 100) scale(1.1)"
-                  />
-                </svg>
-              </span>
+          <div class="self-end w-full lg:w-1/2 px-4 py-8 flex justify-center order-first lg:order-last">
+            <div class="relative lg:right-0 mt-0 lg:mt-10 w-full lg:w-2/3 circle">
+              <img src="dist/img/hero_jpg.jpg" alt="Hero Image" class="max-w-full relative z-10 mx-auto" />
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- About Section -->
-    <section id="about" class="dark:bg-dark py-36">
+    <section id="about" class="bg-white dark:bg-dark py-36">
       <div class="container">
         <div class="flex flex-wrap">
           <!-- Left Column -->
           <div class="w-full lg:w-1/2 mb-10 px-4">
-            <h2 class="text-lg text-primary font-bold mb-4">Tentang Saya</h2>
-            <h3 class="max-w-lg text-3xl lg:text-3xl text-dark dark:text-white font-bold leading-relaxed mb-6">Saya seorang programmer yang memadukan pengalaman dengan pengetahuan industri</h3>
+            <h2 class="text-lg text-primary font-bold">Profil Saya</h2>
+            <h3 class="max-w-lg text-3xl lg:text-3xl text-dark dark:text-white font-semibold leading-relaxed lg:mt-10 mb-6">Cerita Dikit Ya, Hehehe</h3>
             <p class="about-left-col-paragraph">
-              Halo, nama saya Aditya Atha, seorang programmer website yang berdedikasi dan berpengalaman. Saya percaya bahwa desain yang kuat dan pengalaman pengguna yang menakjubkan adalah kunci untuk menciptakan website yang luar biasa.
-              Dalam perjalanan saya sebagai seorang programmer, saya telah menguasai HTML, CSS, dan framework CSS seperti Tailwind CSS dan Bootstrap.
+              Assalamu'alaykum. Perkenalkan, saya Aditychi. Seorang freelancer di bidang desain grafis. Saya berasal dari Pontianak, Kalimantan Barat. Saat ini, saya telah menyelesaikan perkuliahan jenjang S1 jurusan teknik informatika di
+              STMIK Pontianak, Kalimantan Barat.
             </p>
             <p class="about-left-col-paragraph">
-              Melalui portfolio ini, saya ingin memperkenalkan karya-karya saya yang mencerminkan kreativitas, keahlian teknis, dan fokus pada detail. Saya berkomitmen untuk menciptakan solusi web yang inovatif dan menghadirkan pengalaman
-              yang luar biasa bagi pengguna.
-            </p>
-            <p class="about-left-col-paragraph">
-              Dengan menggunakan HTML dan CSS, saya mampu mengubah konsep desain menjadi kode yang interaktif dan menarik. Saya juga memiliki keahlian dalam menggunakan framework CSS seperti Tailwind CSS dan Bootstrap, yang memungkinkan
-              saya untuk dengan cepat mengembangkan tampilan modern dan responsif.
-            </p>
-            <p class="about-left-col-paragraph">
-              Saya telah bekerja pada berbagai proyek web, mulai dari pembuatan website perusahaan hingga pengembangan aplikasi web yang kompleks. Saya sangat bersemangat untuk menjalankan tantangan baru dan berkolaborasi dengan klien yang
-              ingin menciptakan website yang unik dan terlihat profesional.
-            </p>
-            <p class="about-left-col-paragraph">
-              Selain keahlian teknis, saya juga berkomitmen untuk bekerja dengan baik dalam tim dan berkomunikasi secara efektif. Saya percaya bahwa kolaborasi yang baik adalah kunci kesuksesan dalam setiap proyek. Saya senang bekerja
-              dengan klien yang memiliki visi dan ingin menghasilkan hasil yang luar biasa bersama-sama.
-            </p>
-            <p class="about-left-col-paragraph">
-              Terima kasih telah mengunjungi portfolio saya. Saya berharap dapat memperluas jaringan profesional saya dan bekerja dengan klien yang tertarik untuk merekrut saya. Jika Anda memiliki pertanyaan atau tertarik untuk bekerja
-              sama, jangan ragu untuk menghubungi saya melalui informasi kontak yang tersedia.
+              Desain grafis adalah wahana ekspresi saya yang paling mendalam. Ini adalah bahasa di mana saya dapat menerjemahkan perasaan, gagasan, dan inspirasi ke dalam karya seni visual yang bisa berbicara dengan orang lain. Setiap
+              elemen dalam desain, mulai dari warna, tipografi, hingga tata letak, adalah sarana untuk mengkomunikasikan emosi dan pesan yang ingin saya sampaikan. Bagi saya, desain grafis adalah cara untuk berbicara tanpa kata-kata, untuk
+              membangun jembatan antara diri saya dan khalayak, dan untuk menginspirasi perasaan dan pemikiran. Melalui desain grafis, saya merasa memiliki kekuatan untuk menyentuh hati dan pikiran orang lain, dan itulah mengapa saya selalu
+              merasa terdorong untuk terus mengembangkan keterampilan dan bakat saya di bidang ini.
             </p>
           </div>
           <!-- Right Column -->
           <div class="w-full lg:w-1/2 px-4">
-            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Skill saya</h3>
+            <!-- Pendidikan Terakhir -->
+            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Pendidikan Terakhir</h3>
             <ul>
-              <li class="text-base text-secondary font-medium list-disc list-inside mt-3 mb-2">HTML</li>
-              <li class="text-base text-secondary font-medium list-disc list-inside mb-2">CSS</li>
-              <li class="text-base text-secondary font-medium list-disc list-inside mb-2">Bootstrap</li>
-              <li class="text-base text-secondary font-medium list-disc list-inside mb-2">Tailwind CSS</li>
+              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">S1 : Teknik Informatika STMIK Pontianak (2019-2023)</li>
             </ul>
-            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Mari berteman</h3>
-            <p class="text-base text-secondary font-medium leading-relaxed mb-6">
-              Ingin tetap terhubung dengan saya dan mendapatkan pembaruan terbaru? Yuk, ikuti akun sosial media saya! Bergabunglah dengan komunitas saya untuk mendapatkan informasi eksklusif, konten menarik, dan interaksi langsung. Jangan
-              lewatkan kesempatan untuk terlibat dalam diskusi, mendapatkan saran, atau sekadar menikmati konten yang saya bagikan.
+            <!-- Pengalaman -->
+            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Pengalaman</h3>
+            <ul>
+              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">Telah berkolaborasi dengan teman-teman lain dalam pembuatan poster.</li>
+              <li class="text-base text-paragraph list-disc list-outside leading-loose ml-4 mb-1">Berhasil mendapatkan juara 1 dalam lomba desain poster pada seminar nasional CORISINDO 2023.</li>
+            </ul>
+            <!-- Sosial Media -->
+            <h3 class="text-2xl lg:text-3xl text-dark dark:text-white font-semibold lg:mt-10 mb-6">Mari Berteman</h3>
+            <p class="text-base text-paragraph leading-loose mb-6">
+              Ikutilah akun media sosial saya di bawah ini untuk mendapatkan informasi terbaru mengenai desain, terlibat dalam diskusi, mendapatkan saran, atau sekadar menikmati konten yang saya bagikan.
             </p>
             <!-- Icons Social Media -->
             <div class="flex items-center">
@@ -189,113 +166,153 @@
                   />
                 </svg>
               </a>
-              <!-- Twitter -->
-              <a href="#" target="_blank" class="icons-sosmed">
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Twitter</title>
-                  <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  />
-                </svg>
-              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Karya Section -->
+    <section id="portfolio" class="bg-light dark:bg-slate-800 py-36">
+      <div class="container">
+        <!-- Header -->
+        <div class="w-full px-4">
+          <div class="max-w-xl text-center mx-auto mb-16">
+            <h2 class="text-lg text-primary font-bold mb-4">Karya Saya</h2>
+            <h4 class="text-3xl lg:text-5xl text-dark dark:text-white font-bold mb-8">Hasil Desain</h4>
+            <p class="text-paragraph leading-loose">
+              Di bawah ini, Anda dapat melihat beberapa karya yang telah saya buat. Saya dengan senang hati berbagi karya-karya tersebut dengan Anda untuk memberikan gambaran lebih baik tentang keahlian dan kemampuan saya.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center w-full xl:w-10/12 xl:mx-auto">
+          <!-- Portfolio 1 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/1.png" onclick="showModal('dist/img/portfolio/1.png')" alt="Landing Page" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Poster Collab - Nisa Bakery</h3>
+            </div>
+          </div>
+          <!-- Portfolio 2 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/2.png" onclick="showModal('dist/img/portfolio/2.png')" alt="Portfolio" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Poster Dakwah</h3>
+            </div>
+          </div>
+          <!-- Portfolio 3 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/3.png" onclick="showModal('dist/img/portfolio/3.png')" alt="E-commerce" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Poster Collab - Irfan Syaifullah</h3>
+            </div>
+          </div>
+          <!-- Portfolio 4 -->
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/4.png" onclick="showModal('dist/img/portfolio/4.png')" alt="Blog" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Poster Collab - Bina Sarana</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-slate-100 dark:bg-slate-800 py-36">
+    <section id="portfolio" class="bg-white dark:bg-dark py-36">
       <div class="container">
         <!-- Header -->
         <div class="w-full px-4">
           <div class="max-w-xl text-center mx-auto mb-16">
-            <h2 class="text-lg text-primary font-semibold mb-4">Portfolio</h2>
-            <h4 class="text-3xl lg:text-5xl text-dark dark:text-white font-bold mb-8">Project Terbaru</h4>
-            <p class="text-secondary font-medium">
-              Di bawah ini, Anda akan menemukan beberapa project yang sudah saya kerjakan. Saya dengan senang hati berbagi karya-karya tersebut dengan Anda untuk memberikan gambaran lebih baik tentang keahlian dan kemampuan saya.
-            </p>
+            <h2 class="text-lg text-primary font-bold mb-4">Penghargaan Saya</h2>
+            <h4 class="text-3xl lg:text-5xl text-dark dark:text-white font-bold mb-8">Prestasi</h4>
+            <p class="text-paragraph leading-loose">Di bawah ini, Anda dapat melihat penghargaan yang telah saya peroleh dari lomba atau event yang saya ikuti.</p>
           </div>
         </div>
         <div class="flex flex-wrap justify-center w-full xl:w-10/12 xl:mx-auto">
           <!-- Portfolio 1 -->
-          <div class="max-w-lg md:w-full mx-3 mb-12">
-            <div class="overflow-hidden rounded-md p-4">
-              <img src="dist/img/portfolio/landingpage.jpg" alt="Landing Page" class="w-full" />
-              <h3 class="portfolio-title my-2">Landing Page</h3>
-              <a href="#" class="portfolio-link">Baca selengkapnya...</a>
-            </div>
-          </div>
-          <!-- Portfolio 2 -->
-          <div class="max-w-lg md:w-full mx-3 mb-12">
-            <div class="overflow-hidden rounded-md p-4">
-              <img src="dist/img/portfolio/portfolio.jpg" alt="Portfolio" class="w-full" />
-              <h3 class="portfolio-title my-2">Portfolio</h3>
-              <a href="#" class="portfolio-link">Baca selengkapnya...</a>
-            </div>
-          </div>
-          <!-- Portfolio 3 -->
-          <div class="max-w-lg md:w-full mx-3 mb-12">
-            <div class="overflow-hidden rounded-md p-4">
-              <img src="dist/img/portfolio/e-commerce.jpg" alt="E-commerce" class="w-full" />
-              <h3 class="portfolio-title my-2">E-commerce</h3>
-              <a href="#" class="portfolio-link">Baca selengkapnya...</a>
-            </div>
-          </div>
-          <!-- Portfolio 4 -->
-          <div class="max-w-lg md:w-full mx-3 mb-12">
-            <div class="overflow-hidden rounded-md p-4">
-              <img src="dist/img/portfolio/blog.jpg" alt="Blog" class="w-full" />
-              <h3 class="portfolio-title my-2">Blog</h3>
-              <a href="#" class="portfolio-link">Baca selengkapnya...</a>
+          <div class="max-w-lg md:w-full mx-3 mb-8 p-1">
+            <div class="overflow-hidden">
+              <img src="dist/img/portfolio/penghargaan.jpg" onclick="showModal('dist/img/portfolio/penghargaan.jpg')" alt="Landing Page" class="w-full cursor-pointer" />
+              <h3 class="portfolio-title my-2">Juara 1 Lomba Desain Poster Pada CORISINDO 2023.</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="bg-slate-100 dark:bg-slate-800 py-36">
+    <section id="contact" class="bg-light dark:bg-slate-800 py-36">
       <div class="container">
         <!-- Header -->
         <div class="w-full px-4">
           <div class="max-w-xl text-center mx-auto mb-16">
-            <h2 class="text-lg text-primary font-semibold mb-4">Contact</h2>
+            <h2 class="text-lg text-primary font-semibold mb-4">Kontak</h2>
             <h4 class="text-3xl lg:text-5xl text-dark dark:text-white font-bold mb-8">Hubungi Saya</h4>
-            <p class="text-secondary font-medium">Jika Anda memiliki pertanyaan, saran, atau masukan yang ingin Anda bagikan, silakan gunakan form di bawah ini.</p>
+            <p class="text-paragraph">Jika Anda memiliki pertanyaan, kritik, atau saran yang ingin Anda bagikan, silakan gunakan form di bawah ini.</p>
           </div>
         </div>
         <!-- Form -->
         <form>
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <!-- Name -->
-            <div class="w-8/12 mx-auto mb-6">
+            <div class="w-full lg:w-8/12 mx-auto mb-6">
               <label for="name" class="label-field">Nama</label>
               <input type="text" id="name" class="input-field" placeholder="Masukkan nama Anda" />
             </div>
             <!-- Email -->
-            <div class="w-8/12 mx-auto mb-6">
+            <div class="w-full lg:w-8/12 mx-auto mb-6">
               <label for="email" class="label-field">Email</label>
               <input type="text" id="email" class="input-field" placeholder="Masukkan email Anda" />
             </div>
             <!-- Message -->
-            <div class="w-8/12 mx-auto mb-6">
+            <div class="w-full lg:w-8/12 mx-auto mb-6">
               <label for="message" class="label-field">Pesan</label>
               <textarea id="message" class="input-field h-32 resize-none" placeholder="Masukkan pesan Anda"></textarea>
             </div>
             <!-- Submit -->
-            <div class="w-8/12 mx-auto">
-              <button class="block w-full text-base text-white font-semibold bg-primary hover:bg-primaryHover rounded-md px-8 py-3 transition duration-300 ease-in-out">Kirim</button>
+            <div class="w-full lg:w-8/12 mx-auto">
+              <button class="block w-full text-base text-white font-medium bg-primary hover:bg-primaryHover px-8 py-4 transition duration-300 ease-in-out">Kirim</button>
             </div>
           </div>
         </form>
       </div>
     </section>
+    <!-- Footer -->
+    <footer class="bg-light py-5">
+      <p class="text-sm font-medium text-paragraph text-center">Copyright &copy; 2023 Aditychi.</p>
+    </footer>
     <!-- Back to Top -->
     <a href="#home" class="flex items-center justify-center w-14 h-14 fixed right-4 bottom-4 z-[9999] bg-primary hover:bg-primaryHover rounded-full p-4"
       ><span class="block text-white"
         ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" /></svg></span
     ></a>
+
+    <!-- The Modal -->
+    <div id="modal" class="hidden fixed top-0 left-0 z-[99999] w-screen h-screen bg-black/80 flex justify-center items-center">
+      <!-- The close button -->
+      <a class="fixed z-[99999999] top-10 lg:top-auto right-auto lg:right-1/4 text-white text-5xl font-medium" href="javascript:void(0)" onclick="closeModal()">&times;</a>
+
+      <!-- A big image will be displayed here -->
+      <img id="modal-img" class="max-w-full lg:max-w-[800px] lg:max-h-[600px] object-cover" />
+    </div>
     <!-- Script -->
     <script src="dist/js/script.js"></script>
+    <script>
+      // Get the modal by id
+      var modal = document.getElementById("modal");
+
+      // Get the modal image tag
+      var modalImg = document.getElementById("modal-img");
+
+      // this function is called when a small image is clicked
+      function showModal(src) {
+        modal.classList.remove("hidden");
+        modalImg.src = src;
+      }
+
+      // this function is called when the close button is clicked
+      function closeModal() {
+        modal.classList.add("hidden");
+      }
+    </script>
   </body>
 </html>

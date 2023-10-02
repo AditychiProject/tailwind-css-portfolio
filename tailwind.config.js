@@ -8,10 +8,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#14b8a6",
-        primaryHover: "#0f766e",
-        secondary: "#64748b",
+        // primary: "#14b8a6",
+        primary: "#18795b",
+        primaryHover: "#195543",
+        paragraph: "#64748b",
         dark: "#0f172a",
+        light: "#eeebed",
       },
       screens: {
         "2xl": "1320px",

@@ -36,11 +36,11 @@ body {
 }
 
 .about-left-col-paragraph {
-  @apply max-w-xl text-base text-secondary font-medium leading-relaxed mb-4;
+  @apply max-w-xl text-base text-paragraph leading-loose mb-4;
 }
 
 .portfolio-title {
-  @apply text-xl text-dark dark:text-white font-semibold mt-5 mb-3;
+  @apply lg:text-lg text-center text-dark dark:text-white font-semibold mt-5;
 }
 
 .portfolio-link {
@@ -54,11 +54,11 @@ body {
 
 /* Form */
 .input-field {
-  @apply w-full text-dark bg-slate-200 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-md p-4;
+  @apply w-full text-dark bg-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4;
 }
 
 .label-field {
-  @apply inline-block text-sm text-primary font-semibold ml-4 mb-2;
+  @apply inline-block text-dark dark:text-white font-semibold mb-2;
 }
 
 /* Dark Mode */
@@ -68,4 +68,24 @@ body {
 
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
+}
+
+.circle {
+  background: plum;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
 }
